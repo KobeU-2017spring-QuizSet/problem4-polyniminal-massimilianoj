@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "---\ntitle: \"Problem4_Polynominal\"\nauthor: \"Akira MATSUI\"\ndate: \"March 23, 2017\"\noutput:\n  pdf_document: default\n  html_document: default\n  word_document: default\n---\n\n\nDefine the polynomial function described below.\n\n\\[\np(x) = a_0 + a_1 x +a_2x^2+ ... + a_nx^n = \\sum^n_{i=0} a_i x^i\n\\]\n\n\nShow out put when $x=1, 2,..., 10$ when $n=2$ \n\nIn this exercise, all of coefficients is one, except for $a_0 = 11$ but you are supposed to write a general code. In other word, your function has to be used to any $n$ not only for $n=2$.\n\n\n# Sample Answer\n\n\n```{r}\npol <- function(x,n){\n       s = 11\n       for (i in 1:n) {\n        s <- x**i + s\n       }\n       return(s)\n      }\n```\nTo get an out put we want to see,\n\n\n```{r}\nfor (i in 0:10){\n     print(pol(i,2))\n }\n```\n\nEvery number is prime number. Is this a coincidence?",
+    "created" : 1490251818225.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3482583159",
+    "id" : "3F3423A",
+    "lastKnownWriteTime" : 1490251825,
+    "last_content_update" : 1490251825154,
+    "path" : "~/Dropbox/TA_Sato/Quiz/Problem4_polynominal/Problem4_polyniminal.Rmd",
+    "project_path" : "Problem4_polyniminal.Rmd",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
