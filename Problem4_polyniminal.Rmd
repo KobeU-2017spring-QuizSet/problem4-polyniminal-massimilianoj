@@ -1,0 +1,42 @@
+---
+title: "Problem4_Polynominal"
+author: "Akira MATSUI"
+date: "March 23, 2017"
+output: html_document
+---
+
+
+Define the polynomial function described below.
+
+\[
+p(x) = a_0 + a_1 x +a_2x^2+ ... + a_nx^n = \sum^n_{i=0} a_i x^i
+\]
+
+
+Show out put when $x=1, 2,..., 10$ when $n=2$ 
+
+In this exercise, all of coefficients is one, except for $a_0 = 11$ but you are supposed to write a general code. In other word, your function has to be used to any $n$ not only for $n=2$.
+
+
+# Sample Answer
+
+
+```{r}
+pol <- function(x,n){
+       s = 11
+       for (i in 1:n) {
+        s <- x**i + s
+       }
+       return(s)
+      }
+```
+To get an out put we want to see,
+
+
+```{r}
+for (i in 0:10){
+     print(pol(i,2))
+ }
+```
+
+Every number is prime number. Is this a coincidence?
