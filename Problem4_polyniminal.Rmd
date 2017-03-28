@@ -40,3 +40,5 @@ for (i in 0:10){
 ```
 
 Every number is prime number. Is this a coincidence?
+
+No. Some formulas (e.g. EUler, Dirichlet, ...) explain the distribution of prime numbers in an arithmetic progression. 
